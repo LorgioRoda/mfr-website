@@ -10,14 +10,14 @@ export default function Description() {
   return (
     <>
       <header>
-        <a href="./main.html" class="logo"> {/* LINK */}
+        <a href="./main.html" class="logo">  {/* LINK  */}
           Maria<span>Fernanda</span>
         </a>
       </header>
       <div class="banner">
         <video
           src={video}
-          autoplay={true}
+          autoPlay={true}
           muted
           loop
           type="mp4"
@@ -34,7 +34,7 @@ export default function Description() {
             Fernanda speaks Spanish and has personally assisted clients from
             Latin America and Spain.
           </p>
-          <a href="./main.html">Read More</a> {/* Linnk */}
+          <a href="./main.html">Read More</a> {/*  Link */}
         </div>
         <div class="imgBox">
           <img src={Mafer} alt="Maria-Fernanda-Roda" />
