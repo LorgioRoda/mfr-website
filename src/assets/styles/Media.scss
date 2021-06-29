@@ -1,0 +1,39 @@
+@media (max-width: 991px) {
+    header {
+        padding: 20px 50px;
+    }
+    header .logo {
+        position: relative;
+        font-size: 25px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+    .banner {
+        padding: 150px 50px 0px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .banner:before {
+        display: none;
+    }
+    .banner .textBox {
+        max-width: 100%;
+    }
+    .banner .textBox h2 {
+        width: 50%;
+    }
+    .banner .imgBox img {
+        position: absolute;
+        bottom: 0px;
+        height: 90%;
+    }
+    .sci {
+        z-index: 1000;
+        left: initial;
+        right: 40px;
+        flex-direction: column;
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM  from "react-dom";
-import Description from './Pages/Description';
-import Home from './Pages/Home';
+import App from './container/App';
 
-ReactDOM.render(<Description />, document.getElementById("app"))
+
+ReactDOM.render(<App />, document.getElementById("app"))
