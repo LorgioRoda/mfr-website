@@ -1,0 +1,47 @@
+@import "../App.scss";
+@import "../Vars.scss";
+
+.aboutme {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+.aboutme--title {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.aboutme--img img {
+    width: 100vw;
+    height: 100vh;
+    margin: 50px auto 25px auto;
+    object-fit: cover;
+    background-color: $black-color;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.aboutme--img img:hover {
+    opacity: 1;
+}
+.aboutme__container {
+    margin: 0 auto;
+}
+.aboutme__container {
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: justify;
+}
+.aboutme__container button {
+    position: relative;
+    display: inline-block;
+    margin: 15px auto;
+    padding: 15px 20px;
+    text-decoration: none;
+    background: #c7b6c4;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500px;
+}

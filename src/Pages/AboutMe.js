@@ -1,12 +1,20 @@
 import React from "react";
+import "../assets/styles/Components/AboutMe.scss";
 import Mafer from "../assets/static/aboutme__Principal.jpg";
 
 export default function AboutMe() {
   return (
-    <div>
+    <>
       <div className="aboutme">
+        <div className="aboutme--title">
+          <h2>
+            Hi, my name's Maria Fernanda Roda. I'm a NYC Real Estate agent.
+          </h2>
+        </div>
+        <div className="aboutme--img">
+          <img src={Mafer} alt="" />
+        </div>
         <div className="aboutme__container">
-          <h2>Hi, my name's Maria Fernanda Roda. I'm a NYC Real Estate agent.</h2>
           <p>
             Maria Fernanda specialized in the rental and sale properties in
             Manhattan, Brooklyn, and Long Island City. Fernanda currently
@@ -18,13 +26,10 @@ export default function AboutMe() {
             Latin America and Spain.
           </p>
           <button>
-              Learn More <span>" "</span>
+            Learn More <span>" "</span>
           </button>
         </div>
       </div>
-      <div>
-        <img src={Mafer} alt="" />
-      </div>
-    </div>
+    </>
   );
 }
