@@ -7,3 +7,11 @@
         letter-spacing: 2px;
         text-decoration: none;
 }
+@mixin buttom-main {
+        display: inline-block;
+        line-height: 1;
+        
+        background-color: $second-color;
+
+
+}

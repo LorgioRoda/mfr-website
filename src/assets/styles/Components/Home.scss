@@ -24,7 +24,7 @@ header .logo {
     text-decoration: none;
 }
 header .logo span {
-    color: #c7b6c4;
+    color: $main-color;
 }
 header .icon-menu {
     max-width: 60px;
@@ -57,7 +57,7 @@ header .icon-menu {
     top: 0;
     width: 400px;
     height: 100%;
-    background: #c7b6c4;
+    background: ($main-color);
     transform-origin: top;
     transform: skewX(-25deg);
     z-index: 1;
@@ -91,7 +91,7 @@ header .icon-menu {
 .banner .textBox a {
     position: relative;
     display: inline-block;
-    background: #c7b6c4;
+    background: $main-color;
     color: #111;
     padding: 15px 25px;
     text-decoration: none;
