@@ -26,7 +26,7 @@ export default function AboutMe() {
             Latin America and Spain.
           </p>
           <button>
-            Learn More <span>" "</span>
+            View More
           </button>
         </div>
       </div>
