@@ -4,4 +4,25 @@
 
 .services {
     display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+    gap: 10px 10px;
+    margin: 0 auto;
+    font-size: 4rem;
+}
+.services__title {
+    display: grid;
+    grid-column: 1 / 4;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    justify-self: center;
+}
+.services__content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(800px, 500px));
+    gap: 10px;
+    margin: 0 auto;
+}
+.services--buyhome {
 }

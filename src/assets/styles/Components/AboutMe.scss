@@ -6,7 +6,7 @@
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, 33%);
     gap: 10px 10px; //filas y columnas
-    max-height: 1000px;
+    max-height: 100vh;
     margin: auto;
     background-color: $white-color;
 }
@@ -14,7 +14,7 @@
     width: 100%;
     margin: auto 50px;
     padding: auto;
-    font-size: 4.2rem;
+    font-size: 2.8rem;
     text-align: center;
 }
 .aboutme--img img {
@@ -30,9 +30,9 @@
 }
 .aboutme__container {
     grid-column: 1 / 2;
-    margin: 70px 50px;
+    margin: 50px;
     padding: 5px;
-    font-size: 3rem;
+    font-size: 1.8rem;
     text-align: justify;
 }
 .aboutme__container p {
@@ -40,12 +40,10 @@
 }
 .aboutme__container button {
     display: inline;
-    width: 25%;
-    margin: 10px auto;
     padding: 15px;
     color: $third-color;
     font-weight: bolder;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     border: 3px solid $third-color;
