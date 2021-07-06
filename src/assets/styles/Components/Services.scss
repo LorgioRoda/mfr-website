@@ -4,11 +4,12 @@
 
 .services {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(3, 33%);
-    gap: 10px 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
     margin: 0 auto;
-    background-color: $call-to-action;
+    width: 100vw;
+    height: 80vh;
 }
 .services__title {
     display: grid;
@@ -19,14 +20,24 @@
     justify-self: center;
     font-size: 2.8rem;
 }
-.services__content {
-    display: grid;
-    grid-template-columns: repeat(3, fit-content(450px));
-    gap: 10px;
-    margin: 0 auto;
-    font-size: 1.8rem;
-}
 .services--buyhome {
-    display: grid;
-    
+    grid-row: auto;
+    align-self: center;
+    height: auto;
+    padding: 10px;
+    border-radius: 10%;
+    align-content: center;
+    text-align: center;
+    background-color: $main-color;
+    font-size: 2rem;
+}
+.services--sellhome{
+    grid-row: auto;
+    align-self: stretch;
+    padding: 10px;
+    background-color: $main-color;
+}
+.services--localexpertise{
+    grid-row: auto;
+    align-self: stretch;
 }

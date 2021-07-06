@@ -7,7 +7,7 @@ export default function Services() {
       <div className="services__title">
         <h2>Our Services for You</h2>
       </div>
-      <div className="services__content">
+      {/* <div className="services__content"> */}
         <div className="services--buyhome">
           <img src="" alt="" />
           <h3>
@@ -42,6 +42,6 @@ export default function Services() {
           </p>
         </div>
       </div>
-    </div>
+    /* </div> */
   );
 }
