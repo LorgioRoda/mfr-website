@@ -1,5 +1,8 @@
 import React from "react";
-import "../assets/styles/Components/Services.scss"
+import "../assets/styles/Components/Services.scss";
+import forRent from "../assets/static/Untitled (1).svg"
+import rent from "../assets/static/Untitled.svg"
+import rentExpertise from "../assets/static/Untitled (2).svg"
 
 export default function Services() {
   return (
@@ -7,20 +10,20 @@ export default function Services() {
       <div className="services__title">
         <h2>Our Services for You</h2>
       </div>
-      {/* <div className="services__content"> */}
         <div className="services--buyhome">
-          <img src="" alt="" />
+          <img src={rent}  alt="" />
           <h3>
-            <strong>BUY HOME</strong>
+            <strong>Buy a home with me</strong>
           </h3>
           <p>
             Buying a home doesn’t have to be an overwhelming process when you
-            have the right professional by your side. Let’s find one you’ll
+            have the right professional by your side.
+            Let’s find one you’ll
             love.
           </p>
         </div>
         <div className="services--sellhome">
-          <img src="" alt="" />
+          <img src={forRent} alt="" />
           <h3>
             <strong>SELL HOME</strong>
           </h3>
@@ -31,7 +34,7 @@ export default function Services() {
           </p>
         </div>
         <div className="services--localexpertise">
-          <img src="" alt="" />
+          <img src={rentExpertise}alt="" />
           <h3>
             <strong>LOCAL EXPERTISE</strong>
           </h3>
@@ -42,6 +45,5 @@ export default function Services() {
           </p>
         </div>
       </div>
-    /* </div> */
   );
 }

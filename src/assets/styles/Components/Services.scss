@@ -1,43 +1,109 @@
 @import "../App.scss";
 @import "../Vars.scss";
 @import "../Media.scss";
+@import "../Mixins.scss";
 
 .services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    margin: 0 auto;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
+    justify-items: center;
+    margin: 0 auto;
+    background-color: #171516;
 }
 .services__title {
     display: grid;
     grid-column: 1 / 4;
+    gap: 15px;
     align-items: center;
     text-align: center;
     margin: 0 auto;
     justify-self: center;
     font-size: 2.8rem;
+    color:$white-color;
 }
 .services--buyhome {
+    display: grid;
     grid-row: auto;
-    align-self: center;
-    height: auto;
-    padding: 10px;
-    border-radius: 10%;
     align-content: center;
-    text-align: center;
-    background-color: $main-color;
-    font-size: 2rem;
+    width: 50%;
+    height: 90%;
+    color:$white-color;
+   @include card;
+    & img{
+    max-width: 210px;
+    align-content: center;
+    margin: 0 auto;
+   }
+   & h3{
+       width: 100%;
+       text-align: center;
+       margin: 10px auto;
+       color: $white-color;
+       font-size: 2.5rem;
+   }
+   & p{
+       text-align: start;
+       color: $white-color;
+       font-family: $theme-font;
+       font-size: 1.7rem;
+       letter-spacing: 1px;
+   }
 }
 .services--sellhome{
+    display: grid;
     grid-row: auto;
     align-self: stretch;
-    padding: 10px;
-    background-color: $main-color;
+    align-content: center;
+    width: 50%;
+    height: 90%;
+    color:$white-color;
+   @include card;
+    & img{
+    max-width: 220px;
+    align-content: center;
+    margin: 0 auto;
+   }
+   & h3{
+       width: 100%;
+       text-align: center;
+       margin: 10px auto;
+       color: $white-color;
+       font-size: 2.5rem;
+   }
+   & p{
+       color: $white-color;
+       font-size: 1.7rem;
+       letter-spacing: 1px;
+   }
 }
 .services--localexpertise{
+    display: grid;
     grid-row: auto;
     align-self: stretch;
+    align-content: center;
+    width: 50%;
+    height: 90%;
+    color:$white-color;
+   @include card;
+    & img{
+    max-width: 210px;
+    align-content: center;
+    margin: 0 auto;
+   }
+   & h3{
+       width: 100%;
+       text-align: center;
+       margin: 10px auto;
+       color: $white-color;
+       font-size: 2.5rem;
+   }
+   & p{
+       color: $white-color;
+       font-size: 1.7rem;
+       letter-spacing: 1px;
+   }
 }
