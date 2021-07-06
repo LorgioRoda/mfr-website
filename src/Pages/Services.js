@@ -6,11 +6,6 @@ export default function Services() {
     <div className="services">
       <div className="services__title">
         <h2>Our Services for You</h2>
-        <p>
-          Highlight the best of your properties by using the List Category
-          shortcode. You can list categories, types, cities, areas and states of
-          your choice.
-        </p>
       </div>
       <div className="services__content">
         <div className="services--buyhome">
