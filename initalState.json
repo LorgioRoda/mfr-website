@@ -1,0 +1,18 @@
+{
+    "initialState": {
+        "recommendations":[
+            {
+                "id": 1,
+                "name": "Elianny Vera",
+                "image": "https://lh3.googleusercontent.com/a-/AOh14GiWFlthX4xPFGoFJvW5NZspdWhN8VWOadtiWeycmg=w60-h60-p-rp-mo-br100",
+                "description": "Maria Fernanda no only helped me find my luxury apartment at the best price in the area I wanted. She also helped me find the perfect roommate, she understands people and what they need. She is a match maker. I felt 100% confident with Maria recommendations, she provided a great feedback, helped explain clearly the details of the contract. In addition, she was extremely responsive to every one of my questions."
+            },
+            {
+                "id": 2,
+                "name": "Maria Eugenia Bullain",
+                "image": "https://lh3.googleusercontent.com/a-/AOh14GiWFlthX4xPFGoFJvW5NZspdWhN8VWOadtiWeycmg=w60-h60-p-rp-mo-br100",
+                "description": "María Fernanda is a very professional person who works to meet all the client's needs! He has a lot of patience and a cordial treatment at all times! The predisposition of his person to help in the search for the best place to live, makes the experience of working with him a fantastic one! I recommend his services and I value the quality of person he is!"
+            }
+        ]
+    }
+}
