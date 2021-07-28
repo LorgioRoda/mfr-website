@@ -9,11 +9,12 @@ export default function LocalUpdates() {
         console.log(data)
     };
 
-    console.log(watch('example'))
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <input defaultValue="test" {...register("example")}/>
-            <input {...register("exampleRequired", { required: true })} />
+            <p>Name</p>
+            <input type="text" defaultValue="test" {...register("example")}/> {errors.exampleRequired && <span>This field is required and only use numbers</span>}
+            <p>Email</p>
+            <input type="email" {...register("exampleRequired", { required: true, maxLength: 20, pattern: /^[A-Za-z]+$/i })} />
             {errors.exampleRequired && <span>This field is required</span>}
             <input type="submit"/>
         </form>
