@@ -13,8 +13,6 @@ export default class Recommendation extends Component {
         </div>
         <Carousel
           showArrows={true}
-          onChange={true}
-          onClickItem={true}
           InfiniteLoop={true}
           showThumbs={false}
           showThumbs={false}
