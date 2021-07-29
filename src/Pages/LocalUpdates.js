@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import React from 'react';
 import { useForm } from "react-hook-form";
 import "../assets/styles/Components/LocalUpdate.scss"
+import mfrBanner from "../assets/static/mfrBanner.jpg"
 
 
 export default function LocalUpdates() {
@@ -11,7 +12,7 @@ export default function LocalUpdates() {
     };
 
     return (
-        <div>
+        <div className="content">
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form__content">
                     <h3>Arrage a meeting with Maria Fernanda to buy, sell or rent your home.</h3>
