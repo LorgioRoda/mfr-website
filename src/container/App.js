@@ -4,6 +4,7 @@ import AboutMe from "../Pages/AboutMe"
 import Services from '../Pages/Services'
 import Recommendation from "../Pages/Recommendation"
 import LocalUpdates from '../Pages/LocalUpdates'
+import Footer from '../Pages/Footer'
 
 export default function app() {
     return (
@@ -13,6 +14,7 @@ export default function app() {
             <Services/>
             <Recommendation/>
             <LocalUpdates/>
+            <Footer/>
         </div>
     )
 }
