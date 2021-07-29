@@ -14,23 +14,21 @@
     margin: auto;
 }
 .form__content {
+    max-width: 600px;
     padding: 50px;
-    margin: 120px 50px;
+    margin: 100px 60px;
     background-color: #f2f2f229;
     & h3{
-        margin: 20px 30px;
+        margin: 20px auto;
         font-size: 2.5rem;
         text-align: start;
+        color: $main-color;
     }
-}
-.form__content {
-    max-width: 600px;
-    margin: 100px 50px;
 }
 .form__content input {
     display: block;
     width: 100%;
-    margin: 30px;
+    margin: 20px auto;
     padding: 10px 15px;
     border-radius: 5px;
     border: 1px solid$main-color;
@@ -39,13 +37,13 @@
 }
 .form__content--message input {
     width: 100%;
-    padding: 30px;
+    padding: 40px;
     line-height: 14px;
 }
 .form_content--buttom input {
     color: $white-color;
     font-size: 1.6rem;
     border: 2px solid $white-color;
-    background-color: $second-color;
+    background-color: $main-color;
     cursor: pointer;
 }
