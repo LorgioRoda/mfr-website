@@ -1,0 +1,26 @@
+@import "../App.scss";
+@import "../Vars.scss";
+@import "../Media.scss";
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100vw;
+    height: 20vh;
+    justify-items: center;
+    margin: 0 auto;
+    color: $white-color;
+    background-color: #171516;
+    & img {
+        width: 50px;
+        height: auto;
+        margin: 10px auto;
+        cursor: pointer;
+    }
+    & img:hover{
+        padding: 2px;
+        border-radius: 4px;
+        background-color: $white-color;
+    }
+}
