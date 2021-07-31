@@ -1,6 +1,10 @@
 import React from "react";
-import facebook from "../assets/static/facebook.png";
-import instagram from "../assets/static/instagram.png";
+import logo_facebook from "../assets/static/pink_facebook.svg";
+import logo_instagram from "../assets/static/pink_instagram.svg"
+import logo_building from "../assets/static/pink_building.svg"
+import logo_email from "../assets/static/pink_email.svg";
+import logo_phone from "../assets/static/pink_wpp.svg";
+import newyorkcasas from "../assets/static/nycasas-logo-black-small.png"
 
 export default function Footer() {
   return (
@@ -33,18 +37,18 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={instagram} alt="" />
+            <img src={logo_instagram} alt="" />
           </a>
           <a
-            href="https://www.instagram.com/mariafernandaroda/?hl=en"
+            href="https://www.facebook.com/newyorkrealestatemfr"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={facebook} alt="" />
+            <img src={logo_facebook} alt="" />
           </a>
         </div>
         <div className="footer__sponsor">
-          <img src="" alt="" />
+          <a href="https://nycasas.com/team/maria-fernanda-roda.php" target="_blank" rel="noopener noreferrer"><img src={newyorkcasas} alt="" /></a>
         </div>
       </li>
     </div>
