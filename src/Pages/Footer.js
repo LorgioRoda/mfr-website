@@ -12,13 +12,13 @@ export default function Footer() {
       <li className="footer__contact">
         <h4>Contact me</h4>
         <p>
-          <i></i>745 FIFTH AVENUE, SUITE 500 NEW YORK CITY, NY 10151-0099, USA
+        <img src={logo_building} alt=""/>745 FIFTH AVENUE, SUITE 500 NEW YORK CITY, NY 10151-0099, USA
         </p>
         <p>
-          <i></i>48585840394
+          <img src={logo_phone} alt=""/> 48585840394
         </p>
         <p>
-          <i></i>fernanda@nycasas.com
+        <img src={logo_email} alt=""/>fernanda@nycasas.com
         </p>
       </li>
       <li>
