@@ -10,7 +10,7 @@
 }
 .form {
     display: flex;
-    height: 80vh;
+    height: auto;
     margin: auto;
 }
 .form__content {
@@ -35,9 +35,10 @@
     background-color: #F5F5F5;
     box-sizing: border-box;
 }
-.form__content--message input {
+.form__content--message textarea {
     width: 100%;
-    padding: 40px;
+    height: 90px;
+    padding: 7px;
     line-height: 14px;
 }
 .form_content--buttom input {
