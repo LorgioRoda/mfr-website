@@ -40,19 +40,26 @@ export default function Footer() {
       <div className="footer__contact">
         <h4>Contact me</h4>
         <div className="footer__contact--building">
+          <a href="https://www.google.com/maps/place/745+5th+Ave+suite+500,+New+York,+NY+10151,+USA/@40.7631646,-73.9773235,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258fa6e49df93:0x15b3992ff3bb4a60!8m2!3d40.7631646!4d-73.9751348" target="_blank" rel="noopener noreferrer">
+              <img src={logo_building} alt="" />
+          </a>
           <p>
-            <img src={logo_building} alt="" />
-            745 FIFTH AVENUE, SUITE 500 NEW YORK CITY, NY 10151-0099, USA
+          745 FIFTH AVENUE, SUITE 500 NEW YORK CITY, NY 10151-0099, US
           </p>
         </div>
         <div className="footer__contact--phone">
+            <a href="https://wa.link/6rzjp7" target="_blank" rel="noopener noreferrer">
+              <img src={logo_phone} alt="" />
+            </a>
           <p>
-            <img src={logo_phone} alt="" /> 48585840394
+            +1 (917) 770-8636
           </p>
         </div>
-        <div className="footer__contact--building">
+        <div className="footer__contact--email">
+            <a href="mailto:fernanda@nycasas.com">
+              <img src={logo_email} alt="" />
+            </a>
           <p>
-            <img src={logo_email} alt="" />
             fernanda@nycasas.com
           </p>
         </div>
