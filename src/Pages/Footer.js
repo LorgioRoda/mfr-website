@@ -10,7 +10,6 @@ import newyorkcasas from "../assets/static/nycasas-logo-black-small.png";
 export default function Footer() {
   return (
     <div className="footer">
-      <div>
         <div className="footer__social">
           <h4>
             Maria <span>Fernanda</span> Roda
@@ -21,35 +20,42 @@ export default function Footer() {
             Spanish and has personally assisted clients from Latin America and
             Spain.
           </p>
-          <a
-            href="https://www.instagram.com/mariafernandaroda/?hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={logo_instagram} alt="" />
-          </a>
-          <a
-            href="https://www.facebook.com/newyorkrealestatemfr"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={logo_facebook} alt="" />
-          </a>
-        </div>
+          <div className="footer__social__content">
+            <a
+              href="https://www.instagram.com/mariafernandaroda/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={logo_instagram} alt="" />
+            </a>
+            <a
+              href="https://www.facebook.com/newyorkrealestatemfr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={logo_facebook} alt="" />
+            </a>
+          </div>
       </div>
       <div className="footer__contact">
         <h4>Contact me</h4>
-        <p>
-          <img src={logo_building} alt="" />
-          745 FIFTH AVENUE, SUITE 500 NEW YORK CITY, NY 10151-0099, USA
-        </p>
-        <p>
-          <img src={logo_phone} alt="" /> 48585840394
-        </p>
-        <p>
-          <img src={logo_email} alt="" />
-          fernanda@nycasas.com
-        </p>
+        <div className="footer__contact--building">
+          <p>
+            <img src={logo_building} alt="" />
+            745 FIFTH AVENUE, SUITE 500 NEW YORK CITY, NY 10151-0099, USA
+          </p>
+        </div>
+        <div className="footer__contact--phone">
+          <p>
+            <img src={logo_phone} alt="" /> 48585840394
+          </p>
+        </div>
+        <div className="footer__contact--building">
+          <p>
+            <img src={logo_email} alt="" />
+            fernanda@nycasas.com
+          </p>
+        </div>
       </div>
       <div className="footer__sponsor">
         <a

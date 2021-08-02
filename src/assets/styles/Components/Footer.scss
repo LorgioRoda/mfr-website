@@ -2,9 +2,9 @@
 @import "../Vars.scss";
 @import "../Media.scss";
 
-.footer{
+.footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 40% 40% 20%;
     gap: 10px;
     width: 100vw;
     height: 20vh;
@@ -22,5 +22,50 @@
         padding: 2px;
         border-radius: 4px;
         background-color: $white-color;
+    }
+}
+.footer__social {
+    display: grid;
+    grid-template-rows: repeat(1, 2fr);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    & h4 {
+        margin: 10px 0;
+        font-size: 1.8rem;
+    }
+    & p {
+        font-size: 1.5rem;
+    }
+    & img {
+        width: 40px;
+    }
+}
+.footer__contact {
+    max-height: 20px;
+    margin: 10px 0px;
+    & h4 {
+        font-size: 1.8rem;
+    }
+    & img {
+        
+    }
+    & p{
+        font-size: 1.5rem;
+    }
+}
+.footer__contact--building {
+    margin: auto;
+}
+
+.footer__sponsor {
+    width: 350px;
+    height: 20vh;
+    text-align: center;
+    background-color: $main-color;
+    & img {
+        width: 100px;
+        height: auto;
+        margin: 40px auto;
     }
 }
