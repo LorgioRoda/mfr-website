@@ -65,13 +65,15 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer__sponsor">
-        <a
-          href="https://nycasas.com/team/maria-fernanda-roda.php"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={newyorkcasas} alt="" />
-        </a>
+        <div className="footer_sponsor--imagen">
+          <a
+            href="https://nycasas.com/team/maria-fernanda-roda.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={newyorkcasas} alt="" />
+          </a>
+        </div>
       </div>
     </div>
   );
