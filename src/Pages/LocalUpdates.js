@@ -17,7 +17,7 @@ export default function LocalUpdates() {
                 <div className="form__content">
                     <h3>Arrage a meeting with Maria Fernanda to buy, sell or rent your home.</h3>
                     <input placeholder="Your name*" type="text" {...register("example")}/> {errors.exampleRequired && <span>This field is required</span>}
-                    <input placeholder="Your email*" type="email" {...register("exampleRequired", { required: true, maxLength: 20, pattern: /^[A-Za-z]+$/i })}/>
+                    <input placeholder="Your email*" type="email" {...register("exampleRequired", { required: true })}/> {errors.exampleRequired && <span>This field is required</span>}
                     <div className="form__content--message">
                         <textarea placeholder="type your message*" type="text"/>
                     </div>
