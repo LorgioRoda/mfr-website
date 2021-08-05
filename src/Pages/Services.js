@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/styles/Components/Services.scss";
 import forRent from "../assets/static/Untitled (1).svg"
 import rent from "../assets/static/Untitled.svg"
-import rentExpertise from "../assets/static/Untitled (2).svg"
+import rentExpertise from "../assets/static/Untitled (2).svg";
 
 export default function Services() {
   return (
