@@ -1,19 +1,19 @@
 import React from 'react'
 import Home from "../Pages/Home"
-import AboutMe from "../Pages/AboutMe"
 import Services from '../Pages/Services'
 import Recommendation from "../Pages/Recommendation"
-import LocalUpdates from '../Pages/LocalUpdates'
 import Footer from '../Pages/Footer'
+import ContactMe from '../Pages/ContactMe'
+import Listings from '../Pages/Listings'
 
 export default function app() {
     return (
         <div className="App">
             <Home/>
-            <AboutMe/>
+            <Listings/>
             <Services/>
             <Recommendation/>
-            <LocalUpdates/>
+            <ContactMe/>
             <Footer/>
         </div>
     )

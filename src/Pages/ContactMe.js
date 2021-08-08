@@ -1,17 +1,15 @@
-import { useEffect, useState } from "react"
 import React from 'react';
 import { useForm } from "react-hook-form";
-import "../assets/styles/Components/LocalUpdate.scss"
-import mfrBanner from "../assets/static/mfrBanner.jpg"
+import "../assets/styles/Components/ContactMe.scss"
 
-
-export default function LocalUpdates() {
+export default function ContactMe() {
     const { register, handleSubmit, watch, formState: {errors} } = useForm();
     const onSubmit = (data) => {
         console.log(data)
     };
 
     return (
+        <>
         <div className="content">
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form__content">
@@ -28,5 +26,6 @@ export default function LocalUpdates() {
                 </div>
             </form>
         </div>
+        </>
     );
 }
