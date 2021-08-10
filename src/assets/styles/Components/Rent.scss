@@ -1,0 +1,40 @@
+@import "../App.scss";
+@import "../Vars.scss";
+@import "../Media.scss";
+
+.rent {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+}
+.rent__cart {
+    margin: 10px auto;
+    border: 2px solid $main-color;
+}
+.rent--image img {
+    width: 250px;
+    height: auto;
+}
+.rent__container {
+    display: grid;
+    max-width: 250px;
+    & h4 {
+        margin: 5px 0;
+        font-size: 2rem;
+        color: $black-color;
+    }
+    & span {
+        margin: 5 auto;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $main-color;
+    }
+}
+.rent__icons {
+    display: flex;
+    justify-content: right;
+    & img{
+        width: 20px;
+        height: auto;
+        margin: 0 5px;
+    }
+}
