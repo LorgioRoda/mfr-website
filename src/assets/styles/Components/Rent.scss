@@ -5,14 +5,20 @@
 .rent {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 400px));
+    place-content: center;
+    margin: 20px auto;
 }
 .rent__cart {
-    margin: 10px auto;
-    border: 2px solid $main-color;
+    min-width: 300px;
+    margin: 20px auto;
+    padding: 0 15px;
+    border-radius: 15px;
 }
 .rent--image img {
-    width: 250px;
+    width: 330px;
     height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
 }
 .rent__container {
     display: grid;
@@ -22,19 +28,27 @@
         font-size: 2rem;
         color: $black-color;
     }
+    & p {
+        font-size: 1.2rem;
+        margin: 5px auto;
+    }
     & span {
         margin: 5 auto;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: bold;
         color: $main-color;
     }
 }
 .rent__icons {
     display: flex;
-    justify-content: right;
+    justify-content: space-evenly;
     & img{
         width: 20px;
         height: auto;
-        margin: 0 5px;
+        margin: 0 7px;
+    }
+    & p {
+        align-items: center;
+        margin: 0 auto;
     }
 }
