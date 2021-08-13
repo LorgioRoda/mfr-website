@@ -9,21 +9,28 @@
     margin: 20px auto;
 }
 .rent__cart {
-    min-width: 300px;
+    max-width: 300px;
+    max-height: 400px;
     margin: 20px auto;
     padding: 0 15px;
     border-radius: 15px;
+    & a {
+        text-decoration: none;
+        color: $black-color;
+    }
 }
 .rent--image img {
     width: 330px;
-    height: auto;
+    height: 250px;
     margin: 0 auto;
     border-radius: 15px;
 }
 .rent__container {
     display: grid;
+    grid-template-rows: 3;
     max-width: 250px;
     & h4 {
+        width: 300px;
         margin: 5px 0;
         font-size: 2rem;
         color: $black-color;
@@ -41,7 +48,7 @@
 }
 .rent__icons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     & img{
         width: 20px;
         height: auto;
