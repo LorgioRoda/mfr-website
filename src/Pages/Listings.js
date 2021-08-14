@@ -9,6 +9,9 @@ export default function Listings() {
   const handleClick = () => {
     setState(!state)
   }
+  const handleClickState = () => {
+    setState(!state)
+  }
 
   return (
         <div className="listing">
@@ -17,7 +20,7 @@ export default function Listings() {
             Showcase properties in homepage to be visible and accessible. Select
             the most wanted categories or cities to be displayed in the lists.
           </p>
-          <button onClick={handleClick}>Butom</button>
+          <button onClick={handleClick}>{state ? "Sell" : "Rent"}</button>
           <div>
             {state ? <Rent/> : <Sell/>}
           </div>
