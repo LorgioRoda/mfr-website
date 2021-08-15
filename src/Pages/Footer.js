@@ -14,13 +14,13 @@ export default function Footer() {
           <h4>
             Maria <span>Fernanda</span> Roda
           </h4>
-          <p>
-            Maria Fernanda specialized in the rental and sale properties in
-            Manhattan, Brooklyn, and Long Island City. Maria Fernanda speaks
-            Spanish and has personally assisted clients from Latin America and
-            Spain.
-          </p>
+          <form>
+            <h5>Suscribete to my newsletter</h5>
+            <input type="text"/>
+            <button>Submit</button>
+          </form>
           <div className="footer__social__content">
+            <p>Follow me:</p>
             <a
               href="https://www.instagram.com/mariafernandaroda/?hl=en"
               target="_blank"

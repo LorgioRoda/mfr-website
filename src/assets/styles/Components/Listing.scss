@@ -17,6 +17,16 @@
         font-size: 1.2rem;
     }
 }
+.listing--title{
+    display: grid;
+    place-content: center;
+    margin: 10px auto;
+}
+.listing--title p {
+    width: 78%;
+    margin: 20px auto;
+    font-size: 1.7rem;
+}
 .listing--buttom {
     display: flex;
     width: 200px;

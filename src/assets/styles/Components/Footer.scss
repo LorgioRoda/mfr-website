@@ -4,7 +4,8 @@
 
 .footer {
     display: grid;
-    grid-template-columns: 40% 40% 20%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 150px;
     width: 100vw;
     height: auto;
     justify-items: center;
@@ -19,7 +20,7 @@
     }
 }
 .footer__social {
-    width: 60%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     text-align: center;
@@ -69,13 +70,13 @@
      }
 }
 .footer__sponsor {
-    width: 90%;
+    width: 100%;
     height: auto;
     text-align: center;
     margin: 0 auto;
     background-color: $main-color;
     & .footer_sponsor--imagen img{
-        width: 100px;
+        width: 22%;
         height: auto;
         margin: 20% auto;
     }
