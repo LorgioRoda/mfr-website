@@ -1,6 +1,7 @@
 @import "../App.scss";
 @import "../Vars.scss";
 @import "../Media.scss";
+@import "../Mixins.scss";
 
 .listing {
     display: grid;
@@ -15,4 +16,19 @@
         margin: 10px auto;
         font-size: 1.2rem;
     }
+}
+.listing--buttom {
+    display: flex;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    padding: 7px;
+    @include primaryButtom;
+    box-shadow: 0 0 40px 40px $main-color inset, 0 0 0 0 $main-color;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.listing--buttom:hover {
+    color: $main-color;
+    box-shadow: 0 0 10px 0 $white-color inset, 0 0 10px 4px $white-color;
 }

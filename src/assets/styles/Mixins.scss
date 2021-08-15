@@ -13,3 +13,12 @@
         border-width: 0px 0px 0px 0px;
         border-radius: 8px;
 }
+@mixin primaryButtom {
+        margin: 0 auto;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-style: none;
+        letter-spacing: 2px;
+        border-radius: 50px;
+        color: $white-color;
+}

@@ -4,7 +4,7 @@
 
 .rent {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 400px));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     place-content: center;
     margin: 20px auto;
 }
