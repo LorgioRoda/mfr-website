@@ -7,25 +7,24 @@
     display: grid;
     place-content: center;
     margin: 30px auto;
-    & h3 {
-        margin: 0 auto;
-        font-size: 2.6rem;
-        color: $black-color
-    }
     & p {
         margin: 10px auto;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 }
 .listing--title{
     display: grid;
     place-content: center;
     margin: 10px auto;
+    & h3 {
+        margin: 0 auto;
+        font-size: 4rem;
+    }
 }
 .listing--title p {
     width: 78%;
     margin: 20px auto;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 .listing--buttom {
     display: flex;

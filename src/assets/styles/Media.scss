@@ -21,9 +21,12 @@
     }
     .banner .textBox {
         max-width: 100%;
+        & a {
+            margin: 0 auto;
+        }
     }
     .banner .textBox h2 {
-        width: 50%;
+        width: 100%;
     }
     .banner .imgBox img {
         position: absolute;

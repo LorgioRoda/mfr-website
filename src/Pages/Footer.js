@@ -38,13 +38,13 @@ export default function Footer() {
           </div>
       </div>
       <div className="footer__contact">
-        <h4>Contact me</h4>
+        <h4>Contact Me</h4>
         <div className="footer__contact--building">
           <a href="https://www.google.com/maps/place/745+5th+Ave+suite+500,+New+York,+NY+10151,+USA/@40.7631646,-73.9773235,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258fa6e49df93:0x15b3992ff3bb4a60!8m2!3d40.7631646!4d-73.9751348" target="_blank" rel="noopener noreferrer">
               <img src={logo_building} alt="" />
           </a>
           <p>
-          745 FIFTH AVENUE, SUITE 500 NEW YORK CITY, NY 10151-0099, US
+          757 Fifth Avenue, Suite 500 New York City, NY 10151-0099, US
           </p>
         </div>
         <div className="footer__contact--phone">

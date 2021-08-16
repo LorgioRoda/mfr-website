@@ -17,12 +17,13 @@
     max-width: 600px;
     padding: 50px;
     margin: 100px 60px;
-    background-color: #f2f2f229;
+    background-color: #d8a6cb42;
     & h3{
         margin: 20px auto;
         font-size: 2.5rem;
+        font-weight: bold;
         text-align: start;
-        color: $main-color;
+        color: $white-color;
     }
 }
 .form__content input {
@@ -31,7 +32,7 @@
     margin: 20px auto;
     padding: 10px 15px;
     border-radius: 5px;
-    border: 1px solid$main-color;
+    border: none;
     background-color: #F5F5F5;
     box-sizing: border-box;
 }
@@ -45,14 +46,14 @@
     height: 90px;
     padding: 7px;
     line-height: 14px;
-    border: 2px solid$main-color;
+    border: none;
 }
 .form_content--buttom input {
-    color: $white-color;
+    color: $main-color;
     font-weight: bold;
     font-size: 1.6rem;
-    border: 2px solid $white-color;
-    background-color: $main-color;
+    border: none;
+    background-color: $white-color;
     letter-spacing: 1px;
     cursor: pointer;
 }

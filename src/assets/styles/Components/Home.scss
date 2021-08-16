@@ -1,6 +1,7 @@
 @import "../App.scss";
 @import "../Vars.scss";
 @import "../Media.scss";
+@import "../Mixins.scss";
 
 header {
     position: absolute;
@@ -16,7 +17,7 @@ header {
 header .logo {
     position: relative;
     margin-top: 20px;
-    font-size: 2em;
+    font-size: 3em;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -79,26 +80,32 @@ header .icon-menu {
 }
 .banner .textBox h2 {
     color: #fff;
-    font-size: 1.7em;
+    font-size: 3em;
     margin: 5px 0 25px;
 }
 .banner .textBox p {
+    width: 80%;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.6em;
     margin: 5px 0 25px;
     text-align: justify;
 }
 .banner .textBox a {
-    position: relative;
-    display: inline-block;
-    background: $main-color;
-    color: #111;
-    padding: 15px 25px;
+    display: flex;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    padding: 7px;
     text-decoration: none;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500px;
+    @include primaryButtom;
+    margin: 0;
+    box-shadow: 0 0 40px 40px $main-color inset, 0 0 0 0 $main-color;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.banner .textBox a:hover {
+    color: $main-color;
+    box-shadow: 0 0 1px 0 $white-color inset, 0 0 00px 1px $white-color;
 }
 .banner .imgBox {
     position: relative;

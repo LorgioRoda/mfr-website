@@ -21,9 +21,9 @@ export default function Description() {
         <div className="textBox">
           <h2>MARIA FERNANDA RODA</h2>
           <p>
-            Maria Fernanda specialized in the rental and sale properties in
-            Manhattan, Brooklyn, and Long Island City. <br />
-            Maria Fernanda speaks Spanish and has personally assisted clients
+            Maria Fernanda specializes in rental and sale properties in
+            Manhattan, Brooklyn, and Long Island City.
+            She speaks Spanish and has personally assisted clients
             from Latin America and Spain.
           </p>
           <a href="./main.html">Read More</a> {/*  Link */}
