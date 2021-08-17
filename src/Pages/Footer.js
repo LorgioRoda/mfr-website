@@ -6,6 +6,7 @@ import logo_building from "../assets/static/pink_building.svg";
 import logo_email from "../assets/static/pink_email.svg";
 import logo_phone from "../assets/static/pink_wpp.svg";
 import newyorkcasas from "../assets/static/nycasas-logo-black-small.png";
+import NewLetterForm from "../Components/NewLetterForm";
 
 export default function Footer() {
   return (
@@ -14,11 +15,7 @@ export default function Footer() {
           <h4>
             Maria <span>Fernanda</span> Roda
           </h4>
-          <form>
-            <h5>Suscribete to my newsletter</h5>
-            <input type="text"/>
-            <button>Submit</button>
-          </form>
+          {/* <NewLetterForm /> */}
           <div className="footer__social__content">
             <p>Follow me:</p>
             <a
