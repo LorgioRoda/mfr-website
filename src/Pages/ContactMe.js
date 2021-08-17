@@ -3,13 +3,12 @@ import emailjs from "emailjs-com";
 import "../assets/styles/Components/ContactMe.scss";
 
 export default function ContactMe() {
-  const formContact = { name: "", email: "", text: "" };
+  const formContact = { name: "", email: "", message: "" };
   const [contact, setContact] = useState(formContact);
   const [showMessage, setShowMessage] = useState(false);
 
   const handleChange = (event) => {
-    console.log(event.target);
-    console.log(name, value);
+    console.log({name, value});
     const { name, value } = event.target;
     setContact({ ...contact, [name]: value });
   };
@@ -38,7 +37,7 @@ export default function ContactMe() {
               name="name"
               placeholder="Your name*"
               type="text"
-              onChange={handleChange}
+              onChange={(event) => handleChange(event)}
               value={contact.name}
             />{" "}
             <span>This field is required</span>
@@ -47,7 +46,7 @@ export default function ContactMe() {
                 name="email"
                 placeholder="Your email*"
                 type="email"
-                OnChange={handleChange}
+                onChange={(event) => handleChange(event)}
                 value={contact.email}
               />{" "}
               <span>This field is required</span>
@@ -55,8 +54,7 @@ export default function ContactMe() {
                 name="message"
                 placeholder="type your message*"
                 type="text"
-                OnChange={handleChange}
-                value={contact.text}
+                onChange={(event) => handleChange(event)}
               />
             </div>
             <div className="form_content--buttom">
