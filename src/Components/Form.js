@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../assets/styles/Components/ContactMe.scss"
+import ModalError from "./ModalSuccess";
 
 //value with regex
 const regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
@@ -53,7 +54,7 @@ export default function Form() {
         setContact(formContact);
         alert('Funciona')
     }else if(!isValid()){
-        
+        alert("No")
     }
 };
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ModalForm() {
+export default function ModalSuccess() {
     return (
         <>
             <div className="modalForm">

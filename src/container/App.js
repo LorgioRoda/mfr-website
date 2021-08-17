@@ -5,6 +5,7 @@ import Recommendation from "../Pages/Recommendation"
 import Footer from '../Pages/Footer'
 import ContactMe from '../Pages/ContactMe'
 import Listings from '../Pages/Listings'
+import initialState from "../initialState"
 
 export default function app() {
     return (
@@ -12,7 +13,7 @@ export default function app() {
             <Home/>
             <Listings/>
             <Services/>
-            <Recommendation/>
+            <Recommendation recommendations={initialState.recommendations}/>
             <ContactMe/>
             <Footer/>
         </>
