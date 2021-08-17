@@ -2,26 +2,57 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../assets/styles/Components/ContactMe.scss";
 
+//value with regex
+const regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+const regEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+const validation = {
+  name: (value) => {
+    let alert;
+    if (!value) {
+      alert = "Name is requiered and only use words";
+    } else if (value.length < 3) {
+      alert = "Name have to have more 3 words";
+    }
+    return alert;
+  },
+  email: (value) => {
+    let alert;
+    if (!value) {
+      alert = "Email is required";
+    }
+    return alert;
+  },
+};
 export default function ContactMe() {
   const formContact = { name: "", email: "", message: "" };
+  const errors = { name: null, email: null };
+
   const [contact, setContact] = useState(formContact);
+  const [stateErrors, setStateErrors] = useState(errors);
   const [showMessage, setShowMessage] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setContact({ ...contact, [name]: value });
+    setStateErrors({ ...stateErrors, [name]: validation[name](value) });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+      if(isValid()){
+        emailjs.sendForm(
+          `${process.env.KEYSERVICE}`,
+          `${process.env.KEYTEMPLATE}`,
+          e.target,
+          `${process.env.KEYUSER}`
+        );
+        setContact(formContact);
+      }
+  };
 
-    emailjs.sendForm(
-      `${process.env.KEYSERVICE}`,
-      `${process.env.KEYTEMPLATE}`,
-      e.target,
-      `${process.env.KEYUSER}`
-    );
-    setContact(formContact)
+  const isValid = () => {
+    return !Object.keys(stateErrors).some((key) => stateErrors[key] !== undefined);
   };
 
   return (
@@ -34,28 +65,25 @@ export default function ContactMe() {
               home.
             </h3>
             <input
-              required
               name="name"
               placeholder="Your name*"
               type="text"
               onChange={(event) => handleChange(event)}
               value={contact.name}
-            />{" "}
-            <span>This field is required</span>
+            />
+            {stateErrors.name && <span>{stateErrors.name}</span>}
             <div className="form__content--message">
               <input
-                required
                 name="email"
                 placeholder="Your email*"
                 type="email"
                 onChange={(event) => handleChange(event)}
                 value={contact.email}
-              />{" "}
-              <span>This field is required</span>
+              />
+              {stateErrors.email && <span>{stateErrors.email}</span>}
               <textarea
-                required
                 name="message"
-                placeholder="type your message*"
+                placeholder="type your message"
                 type="text"
                 onChange={(event) => handleChange(event)}
                 value={contact.message}
