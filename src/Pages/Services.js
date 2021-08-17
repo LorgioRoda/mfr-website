@@ -1,18 +1,18 @@
 import React from "react";
 import "../assets/styles/Components/Services.scss";
-import forRent from "../assets/static/Untitled (1).svg"
-import rent from "../assets/static/Untitled.svg"
-import rentExpertise from "../assets/static/Untitled (2).svg";
+import rentIcon from "../assets/static/rentIcon.svg"
+import buyIcon from "../assets/static/buyIcon.svg"
+import informationIcon from "../assets/static/informationIcon.svg";
 
 export default function Services() {
   return (
     <div className="services">
       <div className="services__title">
-        <h3>Our Services for You</h3>
+        <h3>How may I help you? </h3>
       </div>
         <div className="services__content">
           <div className="services--buyhome">
-            <img src={rent}  alt="" />
+            <img src={buyIcon}  alt="Buy, sell or rent" />
             <h3>
               <strong>Buy a home with me</strong>
             </h3>
@@ -24,9 +24,9 @@ export default function Services() {
             </p>
           </div>
           <div className="services--sellhome">
-            <img src={forRent} alt="" />
+            <img src={rentIcon} alt="Rent" />
             <h3>
-              <strong>SELL HOME</strong>
+              <strong>Sell home</strong>
             </h3>
             <p>
               Do you know what your home is truly worth in our market? If you
@@ -35,9 +35,9 @@ export default function Services() {
             </p>
           </div>
           <div className="services--localexpertise">
-            <img src={rentExpertise}alt="" />
+            <img src={informationIcon} alt="Local Expertise" />
             <h3>
-              <strong>LOCAL EXPERTISE</strong>
+              <strong>Information for foreign buyer</strong>
             </h3>
             <p>
               No matter your real estate needs, as a local expert in our market, I
