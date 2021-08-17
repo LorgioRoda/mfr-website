@@ -8,7 +8,6 @@ export default function ContactMe() {
   const [showMessage, setShowMessage] = useState(false);
 
   const handleChange = (event) => {
-    console.log({name, value});
     const { name, value } = event.target;
     setContact({ ...contact, [name]: value });
   };
@@ -22,6 +21,7 @@ export default function ContactMe() {
       e.target,
       `${process.env.KEYUSER}`
     );
+    setContact(formContact)
   };
 
   return (
@@ -34,6 +34,7 @@ export default function ContactMe() {
               home.
             </h3>
             <input
+              required
               name="name"
               placeholder="Your name*"
               type="text"
@@ -43,6 +44,7 @@ export default function ContactMe() {
             <span>This field is required</span>
             <div className="form__content--message">
               <input
+                required
                 name="email"
                 placeholder="Your email*"
                 type="email"
@@ -51,10 +53,12 @@ export default function ContactMe() {
               />{" "}
               <span>This field is required</span>
               <textarea
+                required
                 name="message"
                 placeholder="type your message*"
                 type="text"
                 onChange={(event) => handleChange(event)}
+                value={contact.message}
               />
             </div>
             <div className="form_content--buttom">
