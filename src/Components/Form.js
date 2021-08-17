@@ -3,16 +3,12 @@ import emailjs from "emailjs-com";
 import "../assets/styles/Components/ContactMe.scss"
 import ModalError from "./ModalSuccess";
 
-//value with regex
-const regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
-const regEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
 // Validation on Form
 const validation = {
   name: (value ) => {
     let alert;
-    if (!value || !regName) {
-      alert = "Name is requiered and only use words";
+    if (!value) {
+      alert = "Name is requiered";
     } else if (value.length < 3) {
       alert = "Name have to have more 3 words";
     }
@@ -20,7 +16,7 @@ const validation = {
   },
   email: (value) => {
     let alert;
-    if (!value || !regEmail) {
+    if (!value) {
       alert = "Email is required";
     }
     return alert;
