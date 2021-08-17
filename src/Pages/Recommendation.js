@@ -9,7 +9,7 @@ export default class Recommendation extends Component {
     return (
       <>
         <div className="recommendation--title">
-          <h2>Clients Testimonials</h2>
+          <h3>Clients Testimonials</h3>
         </div>
         <Carousel
           showArrows={true}

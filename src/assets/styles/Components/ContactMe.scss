@@ -1,6 +1,7 @@
 @import "../App.scss";
 @import "../Vars.scss";
 @import "../Media.scss";
+@import "../Mixins.scss";
 
 .content {
     background-image: url(../../static/mfrBanner.jpg);
@@ -33,13 +34,13 @@
     padding: 10px 15px;
     border-radius: 5px;
     border: none;
-    background-color: #F5F5F5;
+    background-color: $white-background;
     box-sizing: border-box;
 }
 .form__content span {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    color: $second-color;
+    color: $white-color;
 }
 .form__content--message textarea {
     width: 100%;
@@ -60,5 +61,5 @@
 .form_content--buttom:hover input{
     color: $main-color;
     background-color: $white-color;
-    border: 2px solid $main-color;
+    border: none;
 }

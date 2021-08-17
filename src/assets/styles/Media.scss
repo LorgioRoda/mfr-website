@@ -1,6 +1,7 @@
 @media (max-width: 991px) {
     header {
         padding: 20px 50px;
+        font-family: $theme-font;
     }
     header .logo {
         position: relative;
@@ -27,6 +28,11 @@
     }
     .banner .textBox h2 {
         width: 100%;
+        text-align: center
+    }
+    .banner .textBox p {
+        width: 100%;
+        margin: 25px auto;
     }
     .banner .imgBox img {
         position: absolute;

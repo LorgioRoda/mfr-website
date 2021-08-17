@@ -8,13 +8,13 @@ import Listings from '../Pages/Listings'
 
 export default function app() {
     return (
-        <div className="App">
+        <>
             <Home/>
             <Listings/>
             <Services/>
             <Recommendation/>
             <ContactMe/>
             <Footer/>
-        </div>
+        </>
     )
 }

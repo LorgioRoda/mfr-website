@@ -8,7 +8,7 @@ export default function Services() {
   return (
     <div className="services">
       <div className="services__title">
-        <h2>Our Services for You</h2>
+        <h3>Our Services for You</h3>
       </div>
         <div className="services__content">
           <div className="services--buyhome">
