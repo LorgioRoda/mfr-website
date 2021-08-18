@@ -47,7 +47,7 @@ export default function Form() {
           `${process.env.KEYUSER}`
         );
         setContact(formContact);
-        alert('Funciona')
+        showMessage
     }else if(!isValid()){
         alert("No")
     }
