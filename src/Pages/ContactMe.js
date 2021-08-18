@@ -13,10 +13,6 @@ export default function ContactMe() {
   return (
     <>
         <Form/>
-        <button onClick={toggle}>Click</button>
-        <ModalSuccess active={active} toggle={toggle}>
-        <h1>work</h1>
-        </ModalSuccess>
     </>
   );
 }

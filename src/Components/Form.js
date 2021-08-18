@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ModalSuccess from "./ModalSuccess";
 import emailjs from "emailjs-com";
 import "../assets/styles/Components/ContactMe.scss"
 
@@ -47,7 +48,7 @@ export default function Form() {
           `${process.env.KEYUSER}`
         );
         setContact(formContact);
-        showMessage
+        setShowMessage(!showMessage)
     }else if(!isValid()){
         alert("No")
     }
@@ -93,6 +94,7 @@ export default function Form() {
             </div>
             <div className="form_content--buttom">
               <input type="submit" />
+              <ModalSuccess active={showMessage} handleSubmit={handleSubmit}/>
             </div>
           </div>
         </form>
