@@ -10,6 +10,13 @@ export default function NewLetterForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    emailjs.sendForm(
+      `${process.env.KEYSERVICE}`,
+      `${process.env.KEYTEMPLATESUBSCRIBE}`,
+      e.target,
+      `${process.env.KEYUSER}`
+    );
+    setSubscribe("");
   };
   return (
     <>
