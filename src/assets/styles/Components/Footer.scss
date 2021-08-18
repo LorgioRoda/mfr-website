@@ -4,8 +4,8 @@
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 150px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
     width: 100vw;
     height: auto;
     justify-items: center;
@@ -70,13 +70,12 @@
      }
 }
 .footer__sponsor {
-    width: 100%;
+    width: 50%;
     height: auto;
     text-align: center;
     margin: 0 auto;
-    background-color: $main-color;
     & .footer_sponsor--imagen img{
-        width: 22%;
+        width: 50%;
         height: auto;
         margin: 20% auto;
     }

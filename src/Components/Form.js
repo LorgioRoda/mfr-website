@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../assets/styles/Components/ContactMe.scss"
-import ModalError from "./ModalSuccess";
 
 // Validation on Form
 const validation = {

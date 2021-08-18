@@ -5,7 +5,7 @@ import logo_instagram from "../assets/static/pink_instagram.svg";
 import logo_building from "../assets/static/pink_building.svg";
 import logo_email from "../assets/static/pink_email.svg";
 import logo_phone from "../assets/static/pink_wpp.svg";
-import newyorkcasas from "../assets/static/nycasas-logo-black-small.png";
+import newyorkcasas from "../assets/static/nycasas-logo-white-small.png";
 import NewLetterForm from "../Components/NewLetterForm";
 
 export default function Footer() {
@@ -15,9 +15,8 @@ export default function Footer() {
           <h4>
             Maria <span>Fernanda</span> Roda
           </h4>
-          {/* <NewLetterForm /> */}
           <div className="footer__social__content">
-            <p>Follow me:</p>
+            <NewLetterForm />
             <a
               href="https://www.instagram.com/mariafernandaroda/?hl=en"
               target="_blank"
