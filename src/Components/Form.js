@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import ModalSuccess from "./ModalSuccess";
 import emailjs from "emailjs-com";
-import "../assets/styles/Components/ContactMe.scss"
+import "../assets/styles/Components/ContactMe.scss";
 
 // Validation on Form
 const validation = {
-  name: (value ) => {
+  name: (value) => {
     let alert;
     if (!value) {
       alert = "Name is requiered";
@@ -23,7 +23,6 @@ const validation = {
   },
 };
 export default function Form() {
-
   const formContact = { name: "", email: "", message: "" };
   const errors = { name: null, email: null };
 
@@ -40,22 +39,22 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if(isValid()){
-        emailjs.sendForm(
-          `${process.env.KEYSERVICE}`,
-          `${process.env.KEYTEMPLATE}`,
-          e.target,
-          `${process.env.KEYUSER}`
-        );
-        setContact(formContact);
-        setShowMessage(!showMessage)
-    }else if(!isValid()){
-        alert("No")
+    if (isValid()) {
+      emailjs.sendForm(
+        `${process.env.KEYSERVICE}`,
+        `${process.env.KEYTEMPLATE}`,
+        e.target,
+        `${process.env.KEYUSER}`
+      );
+      setContact(formContact);
+      setShowMessage(!showMessage);
     }
-};
+  };
 
   const isValid = () => {
-    return !Object.keys(stateErrors).some((key) => stateErrors[key] !== undefined);
+    return !Object.keys(stateErrors).some(
+      (key) => stateErrors[key] !== undefined
+    );
   };
 
   return (
@@ -94,7 +93,7 @@ export default function Form() {
             </div>
             <div className="form_content--buttom">
               <input type="submit" />
-              <ModalSuccess active={showMessage} handleSubmit={handleSubmit}/>
+              <ModalSuccess active={showMessage} handleSubmit={handleSubmit} />
             </div>
           </div>
         </form>
