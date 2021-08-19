@@ -9,17 +9,21 @@ export default class ModalSuccess extends Component {
       <Portal>
         {active && (
           <div className="modal">
-            <button onClick={toggle}>❌</button>
-            <h3>You form was send</h3>
-            <div class="success-checkmark">
-              <div class="check-icon">
-                <span class="icon-line line-tip"></span>
-                <span class="icon-line line-long"></span>
-                <div class="icon-circle"></div>
-                <div class="icon-fix"></div>
+            <div className="modal__container">
+              <h3>You form was send</h3>
+              <div className="success-checkmark">
+                <div className="check-icon">
+                  <span className="icon-line line-tip"></span>
+                  <span className="icon-line line-long"></span>
+                  <div className="icon-circle"></div>
+                  <div className="icon-fix"></div>
+                </div>
+                <button className="modal--buttom" onClick={toggle}>
+                  Back
+                </button>
               </div>
+              <div>{children}</div>
             </div>
-            <div>{children}</div>
           </div>
         )}
       </Portal>

@@ -28,7 +28,7 @@ export default function Form() {
 
   const [contact, setContact] = useState(formContact);
   const [stateErrors, setStateErrors] = useState(errors);
-  const [showMessage, setShowMessage] = useState(false);
+  const [showMessage, setShowMessage] = useState(true);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
