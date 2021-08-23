@@ -12,7 +12,7 @@ export default function ContactMe() {
   }
   return (
     <>
-        <Form/>
+        <Form />
     </>
   );
 }
