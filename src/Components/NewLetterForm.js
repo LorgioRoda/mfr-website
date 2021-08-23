@@ -31,7 +31,8 @@ export default function NewLetterForm() {
               value={subscribe}
               onChange={(event) => handleOnChange(event)}
             />
-            <button type="submit">Submit</button>
+            {/* Submitn only with enter */}
+{/*             <button type="submit">Submit</button> */}
           </div>
         </form>
       </div>
