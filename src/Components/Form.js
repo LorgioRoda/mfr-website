@@ -35,7 +35,9 @@ export default function Form() {
     setContact({ ...contact, [name]: value });
     setStateErrors({ ...stateErrors, [name]: validation[name](value) });
   };
-
+  const toggle = () => {
+    setShowMessage(!showMessage)
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -93,7 +95,7 @@ export default function Form() {
             </div>
             <div className="form_content--buttom">
               <input type="submit" />
-              <ModalSuccess active={showMessage} handleSubmit={handleSubmit} />
+              <ModalSuccess active={showMessage} toggle={toggle} handleSubmit={handleSubmit} />
             </div>
           </div>
         </form>
