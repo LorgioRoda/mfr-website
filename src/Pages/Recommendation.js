@@ -3,7 +3,6 @@ import { Carousel } from "react-responsive-carousel";
 import Card from "../Components/Card";
 import "../assets/styles/Components/Recommendations.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import starts from "../assets/static/star.svg";
 
 export default class Recommendation extends Component {
   render() {

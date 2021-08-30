@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import ModalSuccess from "./ModalSuccess";
+import "../assets/styles/Components/ContactMe.scss";
 
 export default function NewLetterForm() {
   const [subscribe, setSubscribe] = useState("");
+  const [showMessage, setShowMessage] = useState(false);
 
   const handleOnChange = (event) => {
-    setSubscribe(event.target.value)
+    setSubscribe(event.target.value);
+  };
+
+  const toggle = () => {
+    setShowMessage(!showMessage);
   };
 
   const handleSubmit = (e) => {
@@ -31,8 +38,11 @@ export default function NewLetterForm() {
               value={subscribe}
               onChange={(event) => handleOnChange(event)}
             />
-            {/* Submitn only with enter */}
-{/*             <button type="submit">Submit</button> */}
+            <ModalSuccess
+              active={showMessage}
+              toggle={toggle}
+              handleSubmit={handleSubmit}
+            /> {/* El stado no se modifica */}
           </div>
         </form>
       </div>

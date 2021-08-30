@@ -35,9 +35,11 @@ export default function Form() {
     setContact({ ...contact, [name]: value });
     setStateErrors({ ...stateErrors, [name]: validation[name](value) });
   };
+
   const toggle = () => {
     setShowMessage(!showMessage)
   }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
