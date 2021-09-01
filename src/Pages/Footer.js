@@ -1,7 +1,6 @@
 import React from "react";
 /* Styles */
 import "../assets/styles/Components/Footer.scss";
-import "../assets/styles/Components/NewLetterForm.scss";
 /* Images */
 import logo_facebook from "../assets/static/pink_facebook.svg";
 import logo_instagram from "../assets/static/pink_instagram.svg";
@@ -9,7 +8,6 @@ import logo_building from "../assets/static/pink_building.svg";
 import logo_email from "../assets/static/pink_email.svg";
 import logo_phone from "../assets/static/pink_wpp.svg";
 import newyorkcasas from "../assets/static/nycasas-logo-white-small.png";
-import NewLetterForm from "../Components/NewLetterForm";
 
 export default function Footer() {
   return (
@@ -19,7 +17,6 @@ export default function Footer() {
           Maria <span>Fernanda</span> Roda
         </h4>
         <div className="footer__social__content">
-          <NewLetterForm />
           <h3>Follow me</h3>
           <div className="footer__social--media">
             <a

@@ -91,11 +91,11 @@ export default {
       "testimonial":"Maria was able to help me out when i was looking for an accommodation in New York. She is always available. She helps me to find roomates. I highly recommend to contact Maria if you need to find any type of appartement in New York.",
     },
   ],
-  sell: [
+  sells: [
     {
       "id": "1",
       "image":
-        "https://arepa.s3.amazonaws.com/stickers1.pnghttps://photos.zillowstatic.com/fp/1e64714258d5922b3ecfbf8065a6682a-se_large_800_400.webp",
+        "https://photos.zillowstatic.com/fp/f50fe6ccee3d34f9a31ab2fc8718b6b3-se_extra_large_1500_800.webp",
       "title": "768 Fifth Avenue #1527",
       "price": "1,500,000",
       "description":

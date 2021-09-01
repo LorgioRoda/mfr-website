@@ -37,8 +37,8 @@ export default function Form() {
   };
 
   const toggle = () => {
-    setShowMessage(!showMessage)
-  }
+    setShowMessage(!showMessage);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -95,9 +95,16 @@ export default function Form() {
                 value={contact.message}
               />
             </div>
+            <div className="form__content--newsletter">
+              <input type="checkbox"/> <p>subscribe to my newsletter</p>
+            </div>
             <div className="form_content--buttom">
               <input type="submit" />
-              <ModalSuccess active={showMessage} toggle={toggle} handleSubmit={handleSubmit} />
+              <ModalSuccess
+                active={showMessage}
+                toggle={toggle}
+                handleSubmit={handleSubmit}
+              />
             </div>
           </div>
         </form>
